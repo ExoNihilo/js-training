@@ -8,7 +8,9 @@
  */
 
 // Your code :
-
+function getFirst (line){
+  return line[0];
+}
 //* Begin of tests
 const assert = require('assert')
 

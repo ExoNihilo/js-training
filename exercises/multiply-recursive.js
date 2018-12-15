@@ -10,7 +10,17 @@
  */
 
 // Your code :
-
+function multiply(a, b) {
+  let total = 0;
+  if(a == 0 || b == 0)
+    return 0;
+  total = Math.abs(a) + multiply(Math.abs(a), Math.abs(b) - 1);
+  if((a > 0 && b > 0) || (a < 0 && b < 0)){
+    return total
+  } else {
+    return -total;
+  }
+}
 //* Begin of tests
 const assert = require('assert')
 
